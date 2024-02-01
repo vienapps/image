@@ -1,0 +1,8 @@
+==== SWAP ====
+cat /proc/sys/vm/swappiness
+sysctl vm.swappiness=10
+cat /etc/sysctl.conf|grep swappiness
+echo "vm.swappiness=10" >> /etc/sysctl.conf
+swapoff -a
+swapon -a
+=============
